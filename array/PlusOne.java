@@ -15,7 +15,7 @@ public class PlusOne {
     }
 
     public static void main(String[] args) {
-        int[] arr = { 1, 2, 3 };
+        int[] arr = { 9, 9, 9, 8 };
         int[] result = Sum(arr);
         System.out.println(Arrays.toString(result));
     }
