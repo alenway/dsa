@@ -1,5 +1,4 @@
-class LinkedList {
-    // Node definition
+public class llist {
     static class Node {
         int data;
         Node next;
@@ -12,8 +11,7 @@ class LinkedList {
 
     private Node head;
 
-    // Add node at end
-    public void insert(int data) {
+    public void addNode(int data) {
         Node newNode = new Node(data);
 
         if (head == null) {
@@ -22,30 +20,30 @@ class LinkedList {
         }
 
         Node current = head;
+
         while (current.next != null) {
             current = current.next;
         }
+
         current.next = newNode;
     }
 
-    // Print the list
     public void display() {
         Node current = head;
         while (current != null) {
             System.out.print(current.data + " -> ");
             current = current.next;
         }
-        System.out.println("null");
+
     }
 
-    // Main to test
     public static void main(String[] args) {
-        LinkedList list = new LinkedList();
+        llist list = new llist();
 
-        list.insert(10);
-        list.insert(20);
-        list.insert(30);
+        list.addNode(33);
+        list.addNode(34);
+        list.addNode(35);
 
-        list.display(); // 10 -> 20 -> 30 -> null
+        list.display();
     }
 }
