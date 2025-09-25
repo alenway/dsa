@@ -1,5 +1,7 @@
 public class RotateArray {
     public static int[] rotate(int[] arr, int tilt) {
+        int[] newArr = new int[arr.length];
+        for (int )
 
     }
 
