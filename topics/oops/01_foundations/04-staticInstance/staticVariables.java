@@ -1,6 +1,6 @@
-public class Car {
+class Car {
     private static int carCount = 0;
-    private String model;
+    private static String model;
 
     public Car(String model) {
         this.model = model;
@@ -10,11 +10,17 @@ public class Car {
     public static int getCarCount() {
         return carCount;
     }
+
+    public void displayInfo() {
+        System.out.println(model);
+        System.out.println(Car.getCarCount());
+    }
 }
 
 public class staticVariables {
     public static void main(String[] args) {
         Car c1 = new Car("Volvo");
-        System.out.println(Car.getCarCount());
+        c1.displayInfo();
+
     }
 }
