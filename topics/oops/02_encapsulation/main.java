@@ -1,11 +1,10 @@
-package topics.oops;
-
 // Definition: Encapsulation is the practice of bundling data (variables) and methods (functions) that operate on that data into a single unit (class), while restricting direct access to some of the object's components.
 
 class BankAccount {
     // Access Modifiers
     int amount; // default access modifiers
     protected int number;
+    private int seckretKey = 923;
     private double balance;
     private String accountNumber;
 
@@ -27,6 +26,7 @@ class BankAccount {
 
 public class main {
     public static void main(String[] args) {
-
+        BankAccount b1 = new BankAccount();
+        System.out.println(b1.seckretKey);
     }
 }
