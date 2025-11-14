@@ -14,7 +14,5 @@ class AddDigits {
     public static void main(String[] args) {
         int nums = 38;
         System.out.println(add(nums));
-        // int result = nums % 10;
-        // System.out.println(result);
     }
 }
